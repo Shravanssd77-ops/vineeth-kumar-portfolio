@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vineeth Kumar</title>
+<meta name="description" content="Vineeth Kumar. Indian actor, film producer and entrepreneur from Mangalore, Karnataka. Kannada and Tulu cinema.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE occasion: the official site of a film personality, hushed, formal, credible
+   IDEA an international film festival programme, every film a catalogue entry framed in viewfinder corners
+   PICTURE Vineeth's own portraits first; a Dubai skyline silhouette and a Mangalore to Dubai sea route chart
+   COLOUR midnight navy and obsidian grounds, ivory ink, champagne gold used sparingly, one deep emerald band
+   TYPE Cormorant Garamond for titles + Manrope for text
+   LAYOUT laptop: name left, portrait bleeding right; phone: portrait, name, statement, then everything stacks */
+:root{color-scheme:dark;--red:#C8102E;--green:#00843D;--uae:linear-gradient(90deg,#C8102E 0 25%,#00843D 25% 50%,#F5F1E9 50% 75%,#000 75% 100%);--navy:#081522;--obs:#101114;--gold:#C5A46D;--sand:#D8C4A3;--ivory:#F5F1E9;--emer:#183D35;--mute:#b4b8bd;--line:rgba(197,164,109,.26);--serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;--sans:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px;background:var(--navy)}
+body{margin:0;background:var(--navy);color:var(--ivory);font:16px/1.65 var(--sans);overflow-x:clip;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.05;letter-spacing:-.01em;margin:0;text-wrap:balance}
+p{margin:0 0 1em}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1240px;margin:0 auto}
+.band{padding:clamp(64px,9vw,128px) max(5vw,16px)}
+.label{display:flex;align-items:center;gap:12px;color:var(--gold);font:600 13px/1.3 var(--sans);letter-spacing:.08em;margin:0 0 20px}
+.label::before{content:'';flex:none;width:36px;height:2px;background:var(--uae);box-shadow:0 0 0 1px rgba(245,241,233,.12)}
+.caps{font:600 13px/1.6 var(--sans);letter-spacing:.2em;text-transform:uppercase}
+h2{font-size:clamp(40px,5.2vw,72px)}
+.head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px clamp(32px,6vw,96px);align-items:end;margin-bottom:clamp(44px,6vw,80px)}
+.head p{color:var(--mute);max-width:54ch;margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border:1px solid var(--gold);color:var(--ivory);text-decoration:none;font:600 12.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;transition:background .35s,color .35s}
+.btn:hover{background:var(--gold);color:var(--obs)}
+.btn.fill{background:var(--gold);color:var(--obs)}
+.btn.fill:hover{background:var(--sand);border-color:var(--sand)}
+
+/* navigation */
+.nav{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px max(5vw,16px);border-bottom:1px solid transparent;transition:background .4s,border-color .4s}
+.nav.solid,.nav.open{background:rgba(8,21,34,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-color:var(--line)}
+.mark{display:flex;align-items:baseline;gap:10px;text-decoration:none;min-height:44px;align-items:center}
+.mark b{font:600 24px/1 var(--serif);color:var(--gold);letter-spacing:.04em}
+.mark span{font:600 12.5px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase}
+.links{display:flex;gap:clamp(14px,1.9vw,30px);list-style:none;margin:0;padding:0}
+.links a{display:block;padding:14px 0;font:600 12.5px/1 var(--sans);letter-spacing:.16em;text-decoration:none;color:var(--mute);transition:color .3s}
+.links a:hover,.links a.on{color:var(--ivory)}
+.links a.on{background:var(--uae) left bottom/100% 2px no-repeat}
+.menu{display:none;width:44px;height:44px;border:1px solid var(--line);background:none;color:var(--ivory);cursor:pointer;align-items:center;justify-content:center}
+.menu i,.menu i::before,.menu i::after{display:block;width:18px;height:1px;background:currentColor;position:relative;content:''}
+.menu i::before{position:absolute;top:-6px}.menu i::after{position:absolute;top:6px}
+
+/* hero */
+.hero{position:relative;min-height:min(100svh,1000px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);background:radial-gradient(110% 90% at 78% 30%,#10263b 0%,var(--navy) 55%,#0b1119 100%);overflow:hidden}
+.sky{position:absolute;left:0;right:0;bottom:0;width:100%;color:var(--gold);pointer-events:none}
+.hero .sky{height:clamp(130px,20vw,260px);opacity:.15}
+.hero-text{position:relative;z-index:3;align-self:end;padding:130px max(5vw,16px) clamp(56px,8vw,110px)}
+.hero h1{font-size:clamp(68px,9.6vw,150px);line-height:.9;letter-spacing:-.025em;margin:18px 0 26px}
+.hero .roles{color:var(--gold);margin:0}
+.loc{color:var(--sand);font:500 13px/1.8 var(--sans);letter-spacing:.14em;text-transform:uppercase;margin:0}
+.state{font:italic 500 clamp(23px,2.3vw,32px)/1.25 var(--serif);margin:30px 0 14px;max-width:24ch}
+.sup{color:var(--mute);max-width:46ch}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero-photo{position:relative;z-index:1}
+.hero-photo .main{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 26%;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 30%);mask-image:linear-gradient(90deg,transparent 0,#000 30%)}
+.hero-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,21,34,.75) 0,rgba(8,21,34,0) 16%),linear-gradient(0deg,rgba(8,21,34,.9) 0,rgba(8,21,34,0) 28%)}
+.support{position:absolute;z-index:3;right:max(5vw,16px);bottom:clamp(48px,7vw,96px);width:clamp(130px,11.5vw,180px);margin:0;padding:6px;background:var(--obs);border:1px solid var(--line);box-shadow:0 24px 48px rgba(0,0,0,.45)}
+.support img{aspect-ratio:3/4.3;object-fit:cover;object-position:50% 18%;width:100%}
+.hero-text>*,.hero-photo .main,.support{animation:rise 1.1s cubic-bezier(.2,.7,.2,1) both}
+.hero-text>*:nth-child(2){animation-delay:.12s}.hero-text>*:nth-child(3){animation-delay:.24s}.hero-text>*:nth-child(4){animation-delay:.36s}.hero-text>*:nth-child(5){animation-delay:.48s}.hero-text>*:nth-child(6){animation-delay:.6s}
+.hero-photo .main{animation:settle 1.8s cubic-bezier(.2,.7,.2,1) both}
+.support{animation-delay:.8s}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}}
+@keyframes settle{from{opacity:0;transform:scale(1.05)}}
+
+/* credits strip */
+.credits{background:var(--obs);border-block:1px solid var(--line);padding:20px max(5vw,16px)}
+.credits ul{list-style:none;margin:0 auto;padding:0;max-width:1240px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 26px;font:italic 500 19px/1.4 var(--serif);color:var(--sand)}
+.credits li{display:flex;align-items:center;gap:26px;white-space:nowrap}
+.credits li+li::before{content:'';width:5px;height:5px;background:var(--gold);transform:rotate(45deg);margin-left:-26px;position:relative;left:-10px}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(36px,7vw,110px);align-items:center}
+.framed{position:relative;margin:0}
+.framed::before{content:'';position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--line);z-index:0}
+.framed img{position:relative;z-index:1;width:100%;aspect-ratio:4/5.2;object-fit:cover;object-position:50% 14%}
+.lead{font:500 clamp(25px,2.5vw,34px)/1.3 var(--serif);color:var(--ivory)}
+.about .body p{color:var(--mute);max-width:62ch}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 32px;margin:34px 0 0;border-top:1px solid var(--line)}
+.facts div{padding:16px 0;border-bottom:1px solid var(--line)}
+.facts dt{color:var(--gold);font:600 13px/1.4 var(--sans);letter-spacing:.06em;margin-bottom:4px}
+.facts dd{margin:0;color:var(--ivory)}
+
+/* filmography */
+.films{background:linear-gradient(180deg,var(--navy),#0a1420 50%,var(--navy))}
+.group{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px 24px;margin:0 0 24px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.group h3{font-size:clamp(28px,3vw,38px);font-style:italic}
+.group p{color:var(--mute);margin:0;font-size:15px}
+.gap{height:clamp(64px,8vw,112px)}
+.film{position:relative;overflow:hidden;display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:center;padding:clamp(28px,5vw,64px);border:1px solid var(--line);background:#0b1826}
+.film+.film{margin-top:24px}
+.film.flip{grid-template-columns:minmax(0,1fr) minmax(0,340px)}
+.film.flip .poster{order:2}
+.film>.poster,.film>.copy{position:relative;z-index:1}
+.film .bg{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.film .bg img{width:100%;height:100%;object-fit:cover;filter:blur(48px) saturate(1.15);transform:scale(1.3);opacity:.55}
+.film .bg::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,21,34,.25) 0,rgba(8,21,34,.86) 48%,rgba(8,21,34,.95) 100%)}
+.film.flip .bg::after{background:linear-gradient(270deg,rgba(8,21,34,.25) 0,rgba(8,21,34,.86) 48%,rgba(8,21,34,.95) 100%)}
+.poster{position:relative;margin:0;aspect-ratio:2/3;overflow:hidden;background:#0c1b2b;border:1px solid var(--line)}
+.film .poster{box-shadow:0 30px 70px rgba(0,0,0,.55)}
+.poster .amb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(18px) brightness(.5);transform:scale(1.2)}
+.poster .pic{position:relative;width:100%;height:100%;object-fit:contain;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.poster.has{cursor:zoom-in}
+.poster.has:hover .pic{transform:scale(1.03)}
+.ph{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;text-align:center;gap:10px;padding:28px 20px;background:repeating-linear-gradient(135deg,rgba(197,164,109,.045) 0 1px,transparent 1px 14px),radial-gradient(circle at 50% 42%,#13293f,#0a1624)}
+.ph::before{content:'';position:absolute;inset:12px;opacity:.7;background:linear-gradient(var(--gold),var(--gold)) 0 0/20px 1px no-repeat,linear-gradient(var(--gold),var(--gold)) 0 0/1px 20px no-repeat,linear-gradient(var(--gold),var(--gold)) 100% 0/20px 1px no-repeat,linear-gradient(var(--gold),var(--gold)) 100% 0/1px 20px no-repeat,linear-gradient(var(--gold),var(--gold)) 0 100%/20px 1px no-repeat,linear-gradient(var(--gold),var(--gold)) 0 100%/1px 20px no-repeat,linear-gradient(var(--gold),var(--gold)) 100% 100%/20px 1px no-repeat,linear-gradient(var(--gold),var(--gold)) 100% 100%/1px 20px no-repeat}
+.ph b{font:500 clamp(24px,2.2vw,32px)/1.05 var(--serif);color:var(--ivory)}
+.ph small{font:600 13px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.ph::after{content:'';width:28px;height:1px;background:var(--gold);order:-1;opacity:.8}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+.meta span{border:1px solid var(--line);padding:7px 12px;font:600 13px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--sand)}
+.meta span:first-child{color:var(--gold);border-color:var(--gold)}
+.film h3{font-size:clamp(36px,4.2vw,58px);margin-bottom:18px}
+.film .copy>p,.card p{color:var(--mute)}
+.film .copy>p{color:#c9ccd0;max-width:52ch}
+.marks{list-style:none;padding:0;margin:26px 0 0;border-top:1px solid var(--line)}
+.marks li{display:grid;grid-template-columns:minmax(6.2em,max-content) minmax(0,1fr);gap:18px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line)}
+.marks b{font:500 27px/1 var(--serif);color:var(--ivory);white-space:nowrap}
+.marks span{color:#c9ccd0;font-size:15px}
+.marks em{font-style:normal;color:var(--gold);font-size:13px;letter-spacing:.04em;white-space:nowrap}
+.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,44px)}
+.card h3{font-size:clamp(28px,2.6vw,36px);margin:14px 0 12px}
+.card .meta{margin:22px 0 0}
+.more{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.tile h4{font:500 24px/1.1 var(--serif);margin:14px 0 0}
+.tile p{color:var(--mute);font-size:14px;margin:4px 0 0}
+.span-note{color:var(--mute);margin:22px 0 0;font-size:15px}
+
+/* achievements */
+.ach{background:var(--obs)}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border-block:1px solid var(--line)}
+.stat{background:var(--obs);padding:clamp(26px,3.6vw,48px) clamp(18px,2.6vw,36px)}
+.num{font:500 clamp(60px,7.4vw,112px)/.92 var(--serif);color:var(--ivory);display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 12px}
+.num small{font:600 13px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.num.word{font-size:clamp(44px,5vw,76px)}
+.stat p{color:var(--mute);margin:16px 0 0;max-width:30ch}
+.note{color:var(--mute);font-size:13.5px;margin:20px 0 0;max-width:80ch}
+.journey{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px);margin-top:clamp(72px,10vw,140px)}
+.journey p{color:var(--mute);max-width:40ch}
+.jlist{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:36px}
+.jlist li{display:flex;gap:14px;align-items:baseline;padding:17px 0;border-bottom:1px solid var(--line);font-size:16.5px}
+.jlist li::before{content:'';flex:none;width:6px;height:6px;background:var(--gold);transform:rotate(45deg) translateY(-2px)}
+
+/* production */
+.prod{background:radial-gradient(90% 80% at 85% 10%,#1f4a40 0%,var(--emer) 45%,#10291f 100%)}
+.prod .label{color:var(--sand)}
+.prod .head p,.prod .caplist span{color:#cdd6cf}
+.pgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(32px,6vw,96px);align-items:start}
+.caplist{list-style:none;margin:0;padding:0;border-top:1px solid rgba(216,196,163,.3)}
+.caplist li{display:grid;grid-template-columns:minmax(0,1fr);padding:18px 0;border-bottom:1px solid rgba(216,196,163,.3)}
+.caplist b{font:500 clamp(22px,2vw,27px)/1.2 var(--serif)}
+.bts{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);grid-template-rows:repeat(2,minmax(0,1fr));gap:10px;aspect-ratio:5/4.4}
+.bts .slot{aspect-ratio:auto;height:100%}
+.bts .slot:first-child{grid-row:1/3}
+.prod .ph{background:repeating-linear-gradient(135deg,rgba(216,196,163,.05) 0 1px,transparent 1px 14px),radial-gradient(circle at 50% 42%,#21493f,#12302a)}
+.prow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.prow .poster{box-shadow:0 20px 40px rgba(0,0,0,.35)}
+.prow p{margin:12px 0 0;line-height:1.3}
+.prow b{display:block;font:500 19px/1.2 var(--serif)}
+.prow span{display:block;margin-top:4px;color:var(--sand);font:600 13px/1.4 var(--sans);letter-spacing:.08em;text-transform:uppercase}
+.prod .ph{background:repeating-linear-gradient(135deg,rgba(216,196,163,.05) 0 1px,transparent 1px 14px),radial-gradient(circle at 50% 42%,#21493f,#12302a)}
+.tv{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(32px,6vw,96px);align-items:center;margin-top:clamp(72px,9vw,128px);padding-top:clamp(40px,5vw,64px);border-top:1px solid rgba(216,196,163,.3)}
+.tv .big{font:500 clamp(120px,15vw,210px)/.8 var(--serif);color:var(--ivory)}
+.tv .big small{display:block;font:600 13px/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--sand);margin-top:22px}
+.tv h3{font-size:clamp(30px,3vw,42px);margin-bottom:14px}
+.tv p{color:#cdd6cf;max-width:54ch}
+.tv .strip{margin-top:26px}
+
+/* international vision */
+.vision{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--navy) 0%,#0b1b2c 60%,#0d1a24 100%);padding-bottom:clamp(170px,22vw,300px)}
+.vision .sky{height:clamp(150px,21vw,280px);opacity:.22}
+.vgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.7fr) minmax(0,1fr);gap:clamp(20px,3vw,44px);align-items:stretch}
+.side{border-top:1px solid var(--gold);padding-top:24px}
+.side.ae{border-top:2px solid;border-image:var(--uae) 1}
+.side h3{font-size:clamp(40px,4vw,58px);letter-spacing:.06em}
+.side ul{list-style:none;margin:20px 0 0;padding:0}
+.side li{padding:12px 0;border-bottom:1px solid var(--line);color:var(--sand);font-size:16.5px}
+.fig{position:relative;min-height:380px;border:1px solid var(--line);background:radial-gradient(80% 70% at 50% 60%,#0f2639,#0a1725)}
+.fig>svg{position:absolute;inset:0;width:100%;height:100%}
+.fig text{paint-order:stroke;stroke:#0b1a29;stroke-width:4px}
+.center{text-align:center;max-width:900px;margin:clamp(64px,8vw,112px) auto 0}
+.center h3{font:italic 500 clamp(34px,4.4vw,62px)/1.08 var(--serif)}
+.vcols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px clamp(32px,5vw,72px);text-align:left;margin-top:clamp(36px,5vw,56px)}
+.vcols p{color:var(--mute);margin:0}
+
+/* closing */
+.close{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--obs),#0a1520);padding-bottom:clamp(170px,20vw,280px)}
+.close .sky{height:clamp(140px,19vw,260px);opacity:.17}
+.cgrid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.8fr) minmax(0,1fr);gap:clamp(28px,4.5vw,72px);align-items:center}
+.close h2{font-size:clamp(54px,6.4vw,96px);line-height:.92;margin:16px 0 22px}
+.close .roles{color:var(--gold);margin:0}
+.close .state{margin-top:26px}
+.close .second{color:var(--sand);font:500 13px/1.7 var(--sans);letter-spacing:.14em;text-transform:uppercase}
+.arch{margin:0;padding:8px;border:1px solid var(--line);border-radius:999px 999px 0 0;background:rgba(8,21,34,.6)}
+.arch img{width:100%;aspect-ratio:3/4.4;object-fit:cover;object-position:50% 12%;border-radius:999px 999px 0 0}
+.enq h3{font-size:30px;margin-bottom:6px}
+.enq ul{list-style:none;margin:16px 0 0;padding:0;border-top:1px solid var(--line)}
+.enq li{padding:13px 0;border-bottom:1px solid var(--line)}
+.cdet{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:10px 22px;margin:26px 0 24px}
+.cdet dt{color:var(--gold);font:600 13px/1.6 var(--sans);letter-spacing:.06em}
+.cdet dd{margin:0;overflow-wrap:anywhere}
+.cdet dd.tba{color:var(--mute);font-style:italic}
+footer{background:var(--obs);border-top:2px solid;border-image:var(--uae) 1;padding:28px max(5vw,16px)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 32px;color:var(--mute);font-size:14px}
+footer b{font:500 20px/1.3 var(--serif);color:var(--ivory);font-style:italic}
+
+/* library and lightbox */
+.lib{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.lib .poster{aspect-ratio:1}
+.lb{position:fixed;inset:0;z-index:80;display:grid;place-items:center;padding:56px 16px 24px;background:rgba(6,10,16,.94)}
+.lb[hidden]{display:none}
+.lb img{max-height:86vh;width:auto;max-width:100%;object-fit:contain;border:1px solid var(--line)}
+.lb button{position:absolute;top:12px;right:16px;width:44px;height:44px;border:1px solid var(--line);background:none;color:var(--ivory);font:24px/1 var(--sans);cursor:pointer}
+.rv.in{animation:rise 1s cubic-bezier(.2,.7,.2,1) both}
+
+
+/* UAE additions */
+.vision::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--uae);z-index:3}
+.uae-note{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:20px clamp(32px,6vw,96px);align-items:center;padding:clamp(28px,4vw,48px) clamp(20px,3vw,40px);margin:0 0 clamp(56px,7vw,96px);border-left:4px solid var(--red);background:linear-gradient(90deg,rgba(200,16,46,.08),rgba(8,21,34,0) 45%)}
+.uae-note h3{font-size:clamp(30px,3vw,42px)}
+.uae-note .label{margin-bottom:14px}
+.pull{font:500 clamp(21px,2vw,27px)/1.42 var(--serif);color:var(--ivory);margin:0}
+.h2s{font-size:clamp(36px,4.2vw,60px)}
+.dv{position:relative;margin-top:clamp(96px,12vw,160px);padding-top:clamp(48px,6vw,72px);border-top:1px solid var(--line)}
+.dv::before{content:'';position:absolute;top:-1px;left:0;width:120px;height:3px;background:var(--uae)}
+.dv-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(32px,6vw,88px);align-items:start;margin-top:clamp(36px,5vw,56px)}
+.concept{position:relative;margin:0;aspect-ratio:4/5;overflow:hidden;display:flex;flex-direction:column;padding:clamp(20px,3vw,32px);border:1px solid var(--line);background:radial-gradient(110% 60% at 50% 100%,rgba(197,164,109,.32),rgba(197,164,109,0) 62%),linear-gradient(180deg,#0a1a2b 0%,#122539 58%,#1d2a33 100%)}
+.concept::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--uae)}
+.concept .sky{height:46%;opacity:.5}
+.cc-tags{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:8px}
+.tag{border:1px solid rgba(245,241,233,.35);background:rgba(8,21,34,.55);padding:7px 12px;font:600 13px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ivory)}
+.tag.r{border-color:var(--red)}
+.cc-title{position:relative;z-index:1;margin:auto 0 40%}
+.cc-title small{display:block;color:var(--sand);font:600 13px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+.cc-title b{display:block;font:500 clamp(46px,5.4vw,78px)/.92 var(--serif);letter-spacing:-.02em}
+.dv-text>p{color:var(--mute);max-width:58ch}
+.dv-text h4,.engage h4{font:600 13px/1.4 var(--sans);letter-spacing:.08em;color:var(--gold);margin:30px 0 10px}
+.vlist{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.vlist li{display:flex;gap:14px;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--line);font-size:16.5px}
+.vlist li::before{content:'';flex:none;width:14px;height:2px;background:var(--uae);transform:translateY(-4px)}
+.dv blockquote{margin:30px 0 0;padding-left:22px;border-left:2px solid var(--green);font:italic 500 clamp(22px,2vw,28px)/1.32 var(--serif);color:var(--ivory)}
+.engage{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:24px clamp(32px,6vw,96px);margin-top:clamp(80px,10vw,140px)}
+.engage>div>p{color:var(--mute);max-width:52ch}
+.engage h4{margin-top:0}
+.status{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;margin:clamp(20px,3vw,32px) 0 0;background:var(--line);border:1px solid var(--line)}
+.status div{position:relative;background:#0b1a29;padding:26px 24px}
+.status div::before{content:'';position:absolute;top:-1px;left:24px;width:40px;height:2px;background:var(--uae)}
+.status dt{font:500 24px/1.2 var(--serif);color:var(--ivory);margin-bottom:8px}
+.status dd{margin:0;color:var(--mute)}
+.cl{list-style:none;margin:24px 0 26px;padding:0;display:grid;gap:12px}
+.cl a{display:flex;align-items:center;gap:16px;min-height:52px;text-decoration:none}
+.cl .ic{flex:none;width:44px;height:44px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;color:var(--gold);transition:border-color .3s,background .3s}
+.cl svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.cl small{display:block;color:var(--gold);font:600 13px/1.3 var(--sans);letter-spacing:.06em}
+.cl span{overflow-wrap:anywhere}
+.cl a:hover .ic{border-color:var(--gold);background:rgba(197,164,109,.1)}
+.cl a:hover b{color:var(--sand)}
+.cl b{font-weight:500;transition:color .3s}
+@media (max-width:900px){.uae-note,.dv-grid,.engage{grid-template-columns:minmax(0,1fr)}.concept{max-width:460px;width:100%}}
+@media (max-width:760px){.status{grid-template-columns:minmax(0,1fr)}}
+
+@media (max-width:1060px){
+.menu{display:inline-flex}
+.links{position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:rgba(8,21,34,.97);border-bottom:1px solid var(--line);padding:6px max(5vw,16px) 18px;display:none}
+.nav.open .links{display:flex}
+.links a{padding:15px 0;font-size:13px;border-bottom:1px solid rgba(197,164,109,.12)}
+.links a.on{color:var(--gold);background:linear-gradient(var(--red),var(--red)) left center/3px 50% no-repeat;padding-left:12px}
+}
+@media (max-width:900px){
+.head,.about,.film,.pgrid,.tv,.journey{grid-template-columns:minmax(0,1fr)}
+.film.flip{grid-template-columns:minmax(0,1fr)}
+.film.flip .poster{order:0}
+.film .poster{max-width:320px;width:100%;margin:0 auto}
+.film .bg::after,.film.flip .bg::after{background:linear-gradient(180deg,rgba(8,21,34,.3) 0,rgba(8,21,34,.88) 46%,rgba(8,21,34,.95) 100%)}
+.trio{grid-template-columns:minmax(0,1fr);gap:40px}
+.card{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr);gap:24px;align-items:start}
+.card .meta{margin-top:0}
+.card h3{margin-top:14px}
+.more{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(150px,40%);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}
+.tile{scroll-snap-align:start}
+.vgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.vgrid .fig{grid-column:1/-1;order:-1}
+.cgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.cgrid .arch{grid-row:1/3;grid-column:2}
+.about .framed{max-width:520px}
+}
+@media (max-width:760px){
+.hero{grid-template-columns:minmax(0,1fr);min-height:0}
+.hero-photo{order:-1;height:76svh;min-height:440px;max-height:720px}
+.hero-photo::after{background:linear-gradient(0deg,var(--navy) 0,rgba(8,21,34,.6) 22%,rgba(8,21,34,0) 48%)}
+.support{display:none}
+.hero-photo .main{-webkit-mask-image:none;mask-image:none}
+.hero .roles{letter-spacing:.14em}
+.hero-text{margin-top:-170px;padding-top:0;padding-bottom:64px}
+.hero .sky{opacity:.1}
+.stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+.jlist{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:600px){
+.mark span{display:none}
+.card{grid-template-columns:minmax(0,1fr)}
+.vgrid,.vcols{grid-template-columns:minmax(0,1fr)}
+.cgrid{grid-template-columns:minmax(0,1fr)}
+.cgrid .arch{grid-row:auto;grid-column:auto;order:-1;max-width:300px;width:100%;margin:0 auto}
+.fig{min-height:320px}
+.marks li{grid-template-columns:minmax(0,1fr);gap:6px}
+.facts{grid-template-columns:minmax(0,1fr)}
+.strip{gap:6px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="skyline" viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax slice">
+    <path d="M0 220 Q 180 196 380 206 T 820 202 T 1180 198 T 1440 204 V220Z" opacity=".55"/>
+    <g>
+      <rect x="40" y="172" width="30" height="48"/><rect x="78" y="150" width="22" height="70"/><rect x="108" y="182" width="40" height="38"/>
+      <rect x="168" y="140" width="18" height="80"/><rect x="194" y="160" width="30" height="60"/><rect x="258" y="176" width="50" height="44"/>
+      <rect x="328" y="128" width="20" height="92"/><rect x="356" y="156" width="28" height="64"/><rect x="420" y="170" width="40" height="50"/>
+      <rect x="480" y="144" width="24" height="76"/><rect x="512" y="166" width="34" height="54"/><rect x="580" y="118" width="22" height="102"/>
+      <rect x="610" y="150" width="30" height="70"/><rect x="648" y="176" width="36" height="44"/>
+      <path d="M700 220V110H776V220H762V124H714V220Z"/>
+      <rect x="796" y="138" width="26" height="82"/><rect x="830" y="160" width="32" height="60"/><rect x="878" y="124" width="22" height="96"/><rect x="908" y="166" width="30" height="54"/>
+      <path d="M952 220V150H958V112H963V74H968V42H972L975 0L978 42H982V74H987V112H992V150H998V220Z"/>
+      <rect x="1018" y="150" width="30" height="70"/>
+      <path d="M1066 220V104L1075 92L1084 104V220ZM1092 220V114L1101 102L1110 114V220Z"/>
+      <rect x="1124" y="160" width="34" height="60"/>
+      <path d="M1178 220V64Q1226 108 1236 220Z"/><rect x="1174" y="58" width="3" height="162"/>
+      <rect x="1256" y="140" width="24" height="80"/><rect x="1286" y="166" width="40" height="54"/><rect x="1334" y="150" width="22" height="70"/><rect x="1362" y="176" width="44" height="44"/><rect x="1412" y="160" width="28" height="60"/>
+    </g>
+    <rect x="0" y="219" width="1440" height="1"/>
+  </symbol>
+</svg>
+
+<nav class="nav" id="nav" aria-label="Main">
+  <a class="mark" href="#home"><b>VK</b><span>Vineeth Kumar</span></a>
+  <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="links"><i></i></button>
+  <ul class="links" id="links">
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#filmography">FILMOGRAPHY</a></li>
+    <li><a href="#achievements">ACHIEVEMENTS</a></li>
+    <li><a href="#production">PRODUCTION</a></li>
+    <li><a href="#vision">INTERNATIONAL VISION</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+  </ul>
+</nav>
+
+<main>
+<!-- HOME -->
+<section class="hero" id="home">
+  <svg class="sky" aria-hidden="true"><use href="#skyline"/></svg>
+  <div class="hero-text">
+    <p class="caps roles">Indian Actor | Film Producer | Entrepreneur</p>
+    <h1>Vineeth<br>Kumar</h1>
+    <p class="loc">Mangalore, Karnataka, India<br>Kannada &amp; Tulu Film Industry</p>
+    <p class="state">Connecting stories, cultures and audiences through cinema.</p>
+    <p class="sup">An Indian actor, producer and entrepreneur with a growing presence in regional cinema and a vision for international creative collaboration.</p>
+    <div class="ctas"><a class="btn fill" href="#filmography">View filmography</a><a class="btn" href="#contact">Collaborate</a></div>
+  </div>
+  <div class="hero-photo">
+    <img class="main" src="img/portrait-bandhgala-close.jpg" alt="Vineeth Kumar in a black bandhgala with gold embroidery" fetchpriority="high">
+    <figure class="support"><img src="img/portrait-bandhgala-full.jpg" alt="Vineeth Kumar, full-length portrait"></figure>
+  </div>
+</section>
+
+<div class="credits" aria-label="Selected films">
+  <ul><li>Raj, Sounds &amp; Lights</li><li>Middle Class Family</li><li>Gajanana Cricketers</li><li>Ondu Motteya Kathe</li><li>Garuda Gamana Vrishabha Vahana</li><li>Birbal Trilogy</li></ul>
+</div>
+
+<!-- ABOUT -->
+<section class="band" id="about">
+  <div class="wrap about">
+    <figure class="framed rv"><img src="img/portrait-white-seated.jpg" alt="Vineeth Kumar, seated portrait" loading="lazy"></figure>
+    <div class="body rv">
+      <p class="label">About Vineeth Kumar</p>
+      <h2>From the coast of India to the world of cinema.</h2>
+      <p class="lead" style="margin-top:30px">Vineeth Kumar is an Indian actor, film producer, entrepreneur and entertainment professional based in Mangalore, Karnataka.</p>
+      <p>He has established a strong presence in the Kannada and Tulu film industries through commercially successful films, memorable performances and active involvement in film production and promotion.</p>
+      <p>With experience spanning acting, production, television hosting and entertainment management, Vineeth has contributed to the growth and wider recognition of regional cinema, particularly the Tulu film industry.</p>
+      <p>His professional journey reflects a commitment to creating commercially viable entertainment, connecting with regional audiences and taking South Indian cinema to broader national and international markets.</p>
+      <dl class="facts">
+        <div><dt>Based in</dt><dd>Mangalore, Karnataka</dd></div>
+        <div><dt>Cinema</dt><dd>Kannada, Tulu and Telugu</dd></div>
+        <div><dt>On screen</dt><dd>Lead actor, television host</dd></div>
+        <div><dt>Off screen</dt><dd>Producer, entrepreneur</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- FILMOGRAPHY -->
+<section class="band films" id="filmography">
+  <div class="wrap">
+    <div class="head rv">
+      <div><p class="label">Filmography</p><h2>A cinematic journey, film by film.</h2></div>
+      <p>Lead roles and productions in Tulu cinema, work in acclaimed Kannada films, and acting credits across Kannada, Tulu and Telugu cinema.</p>
+    </div>
+
+    <div class="group"><h3>Tulu cinema, in the lead</h3><p>Lead actor in three theatrical successes</p></div>
+
+    <article class="film rv" id="f-raj">
+      <figure class="poster" data-slot="raj" data-label="Raj, Sounds &amp; Lights" data-sub="Tulu"></figure>
+      <div class="copy">
+        <p class="meta"><span>Tulu</span><span>Lead Actor | Producer</span></p>
+        <h3>Raj, Sounds &amp; Lights</h3>
+        <p>Vineeth led the cast and produced the film, which went on to complete a 133 day run in theatres.</p>
+        <ul class="marks">
+          <li><b>133 days</b><span>Theatrical run</span></li>
+          <li><b>₹2.5 crore</b><span>Approximate box-office collections <em>Reported</em></span></li>
+          <li><b>Best Actor</b><span>Tulu Film Awards</span></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="film flip rv" id="f-mcf">
+      <figure class="poster" data-slot="mcf" data-label="Middle Class Family" data-sub="Tulu"></figure>
+      <div class="copy">
+        <p class="meta"><span>Tulu</span><span>Lead Actor | Producer</span></p>
+        <h3>Middle Class Family</h3>
+        <p>A second production with Vineeth in the lead, completing a theatrical run of more than 100 days.</p>
+        <ul class="marks">
+          <li><b>100+ days</b><span>Theatrical run</span></li>
+          <li><b>₹3 crore+</b><span>Box-office collections <em>Reported</em></span></li>
+          <li><b>Best Actor</b><span>Tulu Film Awards</span></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="film rv" id="f-gc">
+      <figure class="poster" data-slot="gc" data-label="Gajanana Cricketers" data-sub="Tulu"></figure>
+      <div class="copy">
+        <p class="meta"><span>Tulu</span><span>Lead Actor</span></p>
+        <h3>Gajanana Cricketers</h3>
+        <p>A commercially successful regional theatrical release with Vineeth in the lead.</p>
+        <ul class="marks">
+          <li><b>100 days</b><span>Celebrated in cinemas</span></li>
+          <li><b>Coastal Karnataka</b><span>Strong audience support across the region</span></li>
+        </ul>
+      </div>
+    </article>
+
+    <div class="gap"></div>
+    <div class="group"><h3>Kannada cinema</h3><p>Acclaimed films, on screen and in production</p></div>
+    <div class="trio">
+      <article class="card rv" id="f-omk">
+        <figure class="poster" data-slot="omk" data-label="Ondu Motteya Kathe" data-sub="Kannada"></figure>
+        <div><p class="meta"><span>Kannada</span><span>Actor | Co-Producer</span></p>
+        <h3>Ondu Motteya Kathe</h3>
+        <p>Part of the acclaimed Kannada film directed by Raj B. Shetty, contributing both as an actor and in production.</p></div>
+      </article>
+      <article class="card rv" id="f-ggvv">
+        <figure class="poster" data-slot="ggvv" data-label="Garuda Gamana Vrishabha Vahana" data-sub="Kannada"></figure>
+        <div><p class="meta"><span>Kannada</span><span>Actor</span></p>
+        <h3>Garuda Gamana Vrishabha Vahana</h3>
+        <p>Appeared in the critically acclaimed Kannada crime drama directed by Raj B. Shetty.</p></div>
+      </article>
+      <article class="card rv" id="f-birbal">
+        <figure class="poster" data-slot="birbal" data-label="Birbal Trilogy" data-sub="Kannada"></figure>
+        <div><p class="meta"><span>Kannada</span><span>Actor</span></p>
+        <h3>Birbal Trilogy</h3>
+        <p>Portrayed the character Vishnu in the Kannada investigative thriller.</p></div>
+      </article>
+    </div>
+
+    <div class="gap"></div>
+    <div class="group"><h3>Additional film work</h3><p>Regional-language credits</p></div>
+    <div class="more">
+      <div class="tile rv"><figure class="poster" data-slot="90ml" data-label="90ML"></figure><h4>90ML</h4></div>
+      <div class="tile rv"><figure class="poster" data-slot="pulimunchi" data-label="Pulimunchi"></figure><h4>Pulimunchi</h4></div>
+      <div class="tile rv"><figure class="poster" data-slot="yenna" data-label="Yenna"></figure><h4>Yenna</h4></div>
+      <div class="tile rv"><figure class="poster" data-slot="rambarotti" data-label="Ramba Rotti"></figure><h4>Ramba Rotti</h4></div>
+      <div class="tile rv"><figure class="poster" data-slot="marriageparty" data-label="Marriage Party" data-sub="Upcoming"></figure><h4>Marriage Party</h4><p>Upcoming Kannada film, Sandalwood</p></div>
+    </div>
+    <p class="span-note">Acting credits span Kannada, Tulu and Telugu cinema.</p>
+  </div>
+</section>
+
+<section class="band" id="library" hidden>
+  <div class="wrap">
+    <div class="head"><div><p class="label">Image library</p><h2>Awaiting assignment</h2></div><p>Photographs held here until their film is confirmed.</p></div>
+    <div class="lib" id="libgrid"></div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section class="band ach" id="achievements">
+  <div class="wrap">
+    <div class="head rv">
+      <div><p class="label">Achievements</p><h2>Career at a glance.</h2></div>
+      <p>Recognition from the Tulu Film Awards and long theatrical runs in coastal Karnataka, alongside television and production experience.</p>
+    </div>
+    <div class="stats rv">
+      <div class="stat"><div class="num">2</div><p>Best Actor recognitions at the Tulu Film Awards</p></div>
+      <div class="stat"><div class="num">133<small>days</small></div><p>Theatrical run of Raj, Sounds &amp; Lights</p></div>
+      <div class="stat"><div class="num">100+<small>days</small></div><p>Theatrical run of Middle Class Family</p></div>
+      <div class="stat"><div class="num">100<small>days</small></div><p>Gajanana Cricketers theatrical milestone</p></div>
+      <div class="stat"><div class="num">4<small>seasons</small></div><p>Television hosting experience</p></div>
+      <div class="stat"><div class="num word">Multiple<small>films</small></div><p>Acting and production experience</p></div>
+    </div>
+    <p class="note">Box-office figures shown in the filmography are reported collections and have not been independently verified.</p>
+
+    <div class="journey">
+      <div class="rv"><p class="label">Professional highlights</p><h2>The journey so far</h2></div>
+      <ul class="jlist rv">
+        <li>Lead actor in multiple commercially successful Tulu films</li>
+        <li>Two Best Actor recognitions at the Tulu Film Awards</li>
+        <li>Associated with films achieving theatrical runs of over 100 days</li>
+        <li>Acting credits across Kannada, Tulu and Telugu cinema</li>
+        <li>Film production and co-production experience</li>
+        <li>Four seasons of television hosting</li>
+        <li>Experience in entertainment management and business development</li>
+        <li>Active interest in India-UAE film and cultural collaboration</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTION -->
+<section class="band prod" id="production">
+  <div class="wrap">
+    <div class="head rv">
+      <div><p class="label">Production &amp; entrepreneurship</p><h2>Beyond the screen. Behind the story.</h2></div>
+      <p>Alongside his acting career, Vineeth Kumar has been involved in film production, project development, entertainment management and business ventures.</p>
+    </div>
+    <div class="pgrid">
+      <ul class="caplist rv">
+        <li><b>Film development and production</b></li>
+        <li><b>Theatrical promotions and film publicity</b></li>
+        <li><b>Production coordination</b></li>
+        <li><b>Investor and distributor coordination</b></li>
+        <li><b>Entertainment events and audience engagement</b></li>
+        <li><b>Business development and strategic partnerships</b></li>
+        <li><b>Exploring international film production opportunities</b></li>
+      </ul>
+      <div class="prods rv">
+        <p class="label">On the production side</p>
+        <div class="prow">
+          <div><figure class="poster" data-slot="raj" data-label="Raj, Sounds &amp; Lights" data-sub="Tulu"></figure><p><b>Raj, Sounds &amp; Lights</b><span>Producer</span></p></div>
+          <div><figure class="poster" data-slot="mcf" data-label="Middle Class Family" data-sub="Tulu"></figure><p><b>Middle Class Family</b><span>Producer</span></p></div>
+          <div><figure class="poster" data-slot="omk" data-label="Ondu Motteya Kathe" data-sub="Kannada"></figure><p><b>Ondu Motteya Kathe</b><span>Co-Producer</span></p></div>
+        </div>
+      </div>
+    </div>
+    <div class="tv rv">
+      <div class="big">4<small>Seasons of television hosting</small></div>
+      <div>
+        <h3>Television &amp; entertainment</h3>
+        <p>Four seasons of television hosting add another dimension to Vineeth's professional career, alongside his work in film.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERNATIONAL VISION -->
+<section class="band vision" id="vision">
+  <svg class="sky" aria-hidden="true"><use href="#skyline"/></svg>
+  <div class="wrap" style="position:relative;z-index:2">
+    <div class="head rv">
+      <div><p class="label">International vision</p><h2>One industry. Multiple cultures. Infinite stories.</h2></div>
+      <p>Vineeth Kumar aims to strengthen connections between the South Indian film industry and international creative markets, particularly the United Arab Emirates.</p>
+    </div>
+    <aside class="uae-note rv" aria-label="UAE premieres">
+      <div><p class="label">Previously in the UAE</p><h3>Premiered in the Emirates.</h3></div>
+      <p class="pull">Having previously brought his films to UAE audiences, Vineeth Kumar has experienced the warmth and support of the Indian community in the Emirates. This connection continues to inspire his interest in creating cinematic projects that bring Indian stories and UAE experiences closer together.</p>
+    </aside>
+    <div class="vgrid rv">
+      <div class="side"><h3>INDIA</h3><ul><li>Regional stories</li><li>Cultural roots</li><li>Creative talent</li></ul></div>
+      <div class="fig" id="route" role="img" aria-label="A route across the Arabian Sea from Mangalore, India to Dubai, UAE"></div>
+      <div class="side ae"><h3>UAE</h3><ul><li>International opportunities</li><li>Cross-border collaborations</li><li>Global audiences</li></ul></div>
+    </div>
+    <div class="center rv">
+      <h3>Bringing stories from India to the world stage.</h3>
+      <div class="vcols">
+        <p>His long-term vision is to develop films that connect Indian and international audiences, encourage cross-border creative collaborations and showcase culturally meaningful stories.</p>
+        <p>He believes cinema can serve as a bridge between communities, cultures, tourism and business.</p>
+      </div>
+    </div>
+
+    <div class="dv" id="dubai-vision">
+      <div class="rv"><p class="label">Proposed film project</p><h2 class="h2s">Cinema beyond borders.<br>The Dubai vision.</h2></div>
+      <div class="dv-grid">
+        <figure class="concept rv" aria-label="Welcome to Dubai, a proposed film under a working title">
+          <svg class="sky" aria-hidden="true"><use href="#skyline"/></svg>
+          <div class="cc-tags"><span class="tag r">Proposed project</span><span class="tag">Working title</span></div>
+          <div class="cc-title"><small>Family entertainment</small><b>Welcome<br>to Dubai</b></div>
+        </figure>
+        <div class="dv-text rv">
+          <p><strong style="color:var(--ivory);font-weight:600">Welcome to Dubai</strong> is a proposed family-entertainment film, presented here under its working title. The concept centres on Dubai and its connection with Indian audiences, as a cinematic opportunity to introduce Dubai and the wider UAE to audiences across Karnataka and South India.</p>
+          <h4>The creative vision</h4>
+          <ul class="vlist">
+            <li>The UAE's architectural beauty</li>
+            <li>Hospitality and safety</li>
+            <li>Opportunities and cultural diversity</li>
+            <li>The emotional connection millions of Indians share with the UAE</li>
+            <li>Dubai as a destination for tourism and cultural exchange</li>
+          </ul>
+          <blockquote>An opportunity to tell a family-oriented story that celebrates Dubai while strengthening the emotional connection between India and the UAE.</blockquote>
+        </div>
+      </div>
+    </div>
+
+    <div class="engage" id="uae-engagement">
+      <div class="rv">
+        <p class="label">International collaboration &amp; UAE engagement</p>
+        <h2 class="h2s">Engaging with Dubai's film and tourism ecosystem.</h2>
+        <p style="margin-top:22px">Vineeth Kumar seeks meaningful, long-term engagement with the film, tourism and entertainment community in Dubai, built on mutual respect and shared creative and commercial goals.</p>
+      </div>
+      <div class="rv">
+        <h4>Areas of interest</h4>
+        <ul class="vlist">
+          <li>Exploring tourism collaborations through cinema</li>
+          <li>Understanding filming facilitation opportunities in the UAE</li>
+          <li>Connecting with Dubai-based production houses and entertainment organisations</li>
+          <li>Exploring opportunities to showcase Dubai through Indian regional cinema</li>
+          <li>Developing long-term creative and business relationships between India and the UAE</li>
+        </ul>
+      </div>
+      <dl class="status rv">
+        <div><dt>Investor support</dt><dd>Investors are already supporting the proposed project.</dd></div>
+        <div><dt>Location scouting</dt><dd>The team is undertaking location scouting in the UAE.</dd></div>
+        <div><dt>Institutional engagement</dt><dd>Vineeth Kumar would welcome the opportunity to engage with Dubai's Department of Economy and Tourism as the project develops.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / CLOSING -->
+<section class="band close" id="contact">
+  <svg class="sky" aria-hidden="true"><use href="#skyline"/></svg>
+  <div class="wrap cgrid">
+    <div class="rv">
+      <p class="caps roles">Actor | Film Producer | Entrepreneur</p>
+      <h2>Vineeth<br>Kumar</h2>
+      <p class="loc">Mangalore, Karnataka, India</p>
+      <p class="state">Connecting stories, cultures and audiences through cinema.</p>
+      <p class="second">From regional cinema to international collaborations.</p>
+    </div>
+    <figure class="arch rv"><img src="img/portrait-white-standing.jpg" alt="Vineeth Kumar, standing portrait" loading="lazy"></figure>
+    <div class="enq rv">
+      <h3>Enquiries</h3>
+      <p style="color:var(--mute);margin:0">Open to conversations on</p>
+      <ul>
+        <li>Professional enquiries</li>
+        <li>Film production opportunities</li>
+        <li>Acting opportunities</li>
+        <li>Business and international collaborations</li>
+      </ul>
+      <ul class="cl">
+        <li><a href="mailto:vineeth022@gmail.com"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg></span><span><small>Email</small><b>vineeth022@gmail.com</b></span></a></li>
+        <li><a href="tel:+919844728746"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h2.6l1.4 4.1-2 1.4a12 12 0 0 0 6.4 6.4l1.4-2 4.1 1.4v2.6a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2Z"/></svg></span><span><small>Mobile</small><b>+91 98447 28746</b></span></a></li>
+        <li><a href="https://www.instagram.com/vineeth.kumar.a?vrfl=ZnhzN3RkMDcwcHln" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg></span><span><small>Instagram</small><b>@vineeth.kumar.a</b></span></a></li>
+      </ul>
+      <a class="btn fill" href="mailto:vineeth022@gmail.com">Get in touch</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Vineeth Kumar. Actor. Producer. Entrepreneur.</b>
+    <span>From Mangalore to the world of cinema. | &copy; 2026 Vineeth Kumar</span>
+  </div>
+</footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photograph"><button id="lbx" aria-label="Close">&times;</button><img id="lbimg" alt=""></div>
+
+<script>
+{
+/* POSTER MAP. Each key is a data-slot on the page; a path shows that poster, an empty value shows a title card.
+   One poster can serve several slots, for example the production row reuses raj, mcf and omk. */
+const MEDIA={
+  'raj':'img/posters/raj-sounds-and-lights.jpg',
+  'mcf':'img/posters/middle-class-family.jpg',
+  'gc':'img/posters/gajanana-cricketers.jpg',
+  'omk':'img/posters/ondu-motteya-kathe.jpg',
+  'ggvv':'img/posters/garuda-gamana-vrishabha-vahana.jpg',
+  'birbal':'img/posters/birbal-trilogy.jpg',
+  '90ml':'img/posters/90ml.jpg',
+  'marriageparty':'img/posters/marriage-party.jpg',
+  'pulimunchi':'img/posters/pulimunchi.jpg',
+  'yenna':'img/posters/yenna.jpg',
+  'rambarotti':'img/posters/ramba-rotti.jpg',
+  'other':''
+};
+/* Photographs whose film is not yet confirmed. The library section appears only when this has entries. */
+const UNASSIGNED=[];
+
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fill=(f,src)=>{
+  const label=f.dataset.label||'',sub=f.dataset.sub||'';
+  if(src){f.innerHTML='<img class="amb" src="'+esc(src)+'" alt="" aria-hidden="true"><img class="pic" src="'+esc(src)+'" alt="'+esc(label)+' poster" loading="lazy">';f.classList.add('has');f.tabIndex=0;}
+  else{f.innerHTML='<span class="ph">'+(sub?'<small>'+esc(sub)+'</small>':'')+'<b>'+esc(label)+'</b></span>';}
+};
+document.querySelectorAll('.poster[data-slot]').forEach(f=>fill(f,MEDIA[f.dataset.slot]));
+document.querySelectorAll('.film').forEach(a=>{const f=a.querySelector('.poster');const src=f&&MEDIA[f.dataset.slot];if(src){const d=document.createElement('div');d.className='bg';d.setAttribute('aria-hidden','true');d.innerHTML='<img src="'+esc(src)+'" alt="">';a.prepend(d);}});
+
+if(UNASSIGNED.length){
+  const lib=document.getElementById('library');lib.hidden=false;
+  document.getElementById('libgrid').innerHTML=UNASSIGNED.map((p,i)=>'<figure class="poster" data-label="Unassigned '+(i+1)+'"></figure>').join('');
+  lib.querySelectorAll('.poster').forEach((f,i)=>fill(f,UNASSIGNED[i]));
+}
+
+
+const nav=document.getElementById('nav'),menu=document.getElementById('menu');
+const onScroll=()=>nav.classList.toggle('solid',scrollY>40);
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+menu.addEventListener('click',()=>{const o=nav.classList.toggle('open');menu.setAttribute('aria-expanded',o);});
+document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');}));
+
+const links=[...document.querySelectorAll('.links a')];
+if('IntersectionObserver' in window){
+  const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id));}}),{rootMargin:'-45% 0px -50% 0px'});
+  ['home','about','filmography','achievements','production','vision','contact'].forEach(id=>{const el=document.getElementById(id);if(el)spy.observe(el);});
+  const rv=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');rv.unobserve(e.target);}}),{rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.rv').forEach(el=>{const r=el.getBoundingClientRect();if(r.top>innerHeight)rv.observe(el);});
+}
+
+const lb=document.getElementById('lb'),lbimg=document.getElementById('lbimg');
+const openLb=f=>{const i=f.querySelector('.pic');if(!i)return;lbimg.src=i.src;lbimg.alt=i.alt;lb.hidden=false;document.getElementById('lbx').focus();};
+const closeLb=()=>{lb.hidden=true;lbimg.removeAttribute('src');};
+document.addEventListener('click',e=>{const f=e.target.closest('.poster.has');if(f)openLb(f);});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!lb.hidden)closeLb();const f=e.target.closest&&e.target.closest('.poster.has');if(f&&e.key==='Enter')openLb(f);});
+lb.addEventListener('click',e=>{if(e.target!==lbimg)closeLb();});
+
+const fig=document.getElementById('route');
+const calm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const draw=()=>{
+  const W=fig.clientWidth,H=fig.clientHeight,narrow=W<480;
+  const P=(la,lo)=>[W*.1+(lo-50)/30*W*.8,H*.12+(28-la)/18*H*.76];
+  let g='';
+  for(let lo=50;lo<=80;lo+=5){const x=P(20,lo)[0];g+='<line x1="'+x+'" y1="0" x2="'+x+'" y2="'+H+'" class="gr"/>';if(!narrow&&lo%10===5)g+='<text x="'+(x+5)+'" y="'+(H-10)+'" class="tick">'+lo+'°E</text>';}
+  for(let la=10;la<=25;la+=5){const y=P(la,50)[1];g+='<line x1="0" y1="'+y+'" x2="'+W+'" y2="'+y+'" class="gr"/>';if(!narrow)g+='<text x="8" y="'+(y-6)+'" class="tick">'+la+'°N</text>';}
+  const[dx,dy]=P(25.2,55.3),[mx,my]=P(12.9,74.8);
+  const qx=(dx+mx)/2-W*.06,qy=(dy+my)/2+H*.22;
+  const d='M'+mx+' '+my+' Q'+qx+' '+qy+' '+dx+' '+dy;
+  const sx=.25*mx+.5*qx+.25*dx,sy=.25*my+.5*qy+.25*dy;
+  const pin=(x,y,c)=>'<circle cx="'+x+'" cy="'+y+'" r="14" class="ring'+c+'"/><circle cx="'+x+'" cy="'+y+'" r="5" class="pin'+c+'"/>';
+  fig.innerHTML='<svg viewBox="0 0 '+W+' '+H+'" aria-hidden="true">'+
+   '<style>.gr{stroke:rgba(216,196,163,.09);stroke-width:1}.tick{fill:rgba(216,196,163,.5);font:500 13px Manrope,sans-serif}'+
+   '.rt{fill:none;stroke:#C5A46D;stroke-width:1.5;stroke-dasharray:2 7;stroke-linecap:round}.rt2{fill:none;stroke:rgba(197,164,109,.18);stroke-width:8}'+
+   '.ring{fill:none;stroke:rgba(197,164,109,.45)}.pin{fill:#C5A46D}.ringr{fill:none;stroke:rgba(200,16,46,.7)}.pinr{fill:#C8102E}.mv{fill:#F5F1E9}'+
+   '.city{fill:#F5F1E9;font:500 '+(narrow?20:24)+'px "Cormorant Garamond",Georgia,serif}.co{fill:#b4b8bd;font:500 13px Manrope,sans-serif}'+
+   '.sea{fill:rgba(216,196,163,.72);font:italic 500 '+(narrow?17:20)+'px "Cormorant Garamond",Georgia,serif;letter-spacing:.08em}</style>'+
+   g+'<path d="'+d+'" class="rt2"/><path d="'+d+'" class="rt"/>'+
+   '<text x="'+(sx-W*.16)+'" y="'+(sy+40)+'" text-anchor="middle" class="sea">Arabian Sea</text>'+
+   pin(dx,dy,'r')+pin(mx,my,'')+
+   (calm?'':'<circle r="4" class="mv"><animateMotion dur="7s" repeatCount="indefinite" path="'+d+'"/></circle>')+
+   '<text x="'+(dx+20)+'" y="'+(dy-2)+'" class="city">Dubai, UAE</text><text x="'+(dx+20)+'" y="'+(dy+18)+'" class="co">25.2°N 55.3°E</text>'+
+   '<text x="'+(mx-16)+'" y="'+(my+32)+'" text-anchor="end" class="city">Mangalore, India</text><text x="'+(mx-16)+'" y="'+(my+52)+'" text-anchor="end" class="co">12.9°N 74.8°E</text>'+
+   '</svg>';
+};
+if(fig){draw();if('ResizeObserver' in window)new ResizeObserver(draw).observe(fig);}
+}
+</script>
+</body>
+</html>
